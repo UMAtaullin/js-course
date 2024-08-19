@@ -14,19 +14,26 @@ let isCorrectAnswer;
 // }
 
 // Добавьте код здесь, переписав конструкцию выше на switch
-switch(spainCapital) {
-    case 'Madrid':
-        isCorrectAnswer = true;
-        break;
-    case 'madrid':
-        isCorrectAnswer = true;
-        break;
-    case 'MADRID':
-        isCorrectAnswer = true;
-        break;
+switch (spainCapital) {
+    case 'Madrid' || 'madrid' || 'MADRID':
+        isCorrectAnswer = true
+        break
     default:
-        isCorrectAnswer = false;
+        isCorrectAnswer = false
 }
+// switch(spainCapital) {
+//     case 'Madrid':
+//         isCorrectAnswer = true;
+//         break;
+//     case 'madrid':
+//         isCorrectAnswer = true;
+//         break;
+//     case 'MADRID':
+//         isCorrectAnswer = true;
+//         break;
+//     default:
+//         isCorrectAnswer = false;
+// }
 
 
 // Задание 2
