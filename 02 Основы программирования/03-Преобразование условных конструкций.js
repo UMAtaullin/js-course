@@ -14,13 +14,20 @@ let isCorrectAnswer;
 // }
 
 // Добавьте код здесь, переписав конструкцию выше на switch
-switch (spainCapital) {
-    case 'Madrid' || 'madrid' || 'MADRID':
-        isCorrectAnswer = true
-        break
-    default:
-        isCorrectAnswer = false
-}
+// switch (spainCapital) {
+//     case 'Madrid' || 'madrid' || 'MADRID':
+//         isCorrectAnswer = true
+//         break
+//     default:
+//         isCorrectAnswer = false
+// }
+
+console.log(
+    spainCapital == 'Madrid' ||
+    spainCapital == 'madrid' ||
+    spainCapital == 'MADRID' ? true : false
+)
+
 // switch(spainCapital) {
 //     case 'Madrid':
 //         isCorrectAnswer = true;
