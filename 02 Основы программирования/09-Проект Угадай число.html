@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess Number</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Number</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+    }
+
+    .container{
+      width: 100%;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #153677, #4e085f);
+      padding: 10px;
+    }
+
+    .guess-number{
+      width: 100%;
+      max-width: 540px;
+      background: #fff;
+      margin: 50px auto 0px;
+      padding: 40px 30px 70px;
+      border-radius: 10px;
+    }
+
+    h1, p{
+      color:#002765;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    p{
+      color: black;
+      font-size: 18px;
+    }
+
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: flex-end;
+      padding-top: 20px;
+    }
+
+    button{
+      padding: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+
+
+  </style>
 </head>
 <body>
-    <h1>Угадай число</h1>
-    <p>Загадано число от 1 до 10.</p>
-    <p>Дается 5 попыток, чтобы отгадать.</p>
+  <div class="container">
+    <div class="guess-number">
 
-    <div>
+      <div class="info">
+        <h1>Guess The Number</h1>
+        <p>A number from 1 to 10 is guessed!</p>
+        <p>You are given 5 attempts!!!</p>
+      </div>
+
+      <div class="row">
         <button onclick=guessNum(1)>1</button>
         <button onclick=guessNum(2)>2</button>
         <button onclick=guessNum(3)>3</button>
@@ -22,23 +80,25 @@
         <button onclick=guessNum(8)>8</button>
         <button onclick=guessNum(9)>9</button>
         <button onclick=guessNum(10)>10</button>
-    </div>
+      </div>
 
+    </div>
+  </div>
     <script>
-        var secretNum = Math.ceil(Math.random() * 10);
-        var tries = 0;
-        
-        function guessNum(num) {
-            if (tries >= 5) return alert('Игра окончена!');
-        
-            if (num === secretNum) {
-                alert('Вы угадали!')
-                tries = 5;
-            } else {
-                alert('Вы не угадали!');
-                tries++;
-            }
-        }
+      const secretNum = Math.ceil(Math.random() * 10)
+      let tries = 0
+
+      function guessNum(num) {
+      tries++
+      if (tries <= 3) {
+          return alert(
+          num === secretNum ? 
+          'Поздравляем! Вы победили!' : 
+          `Осталось ${3-tries} попыток`)
+      } else {
+          alert('Не расстраивайтесь, это всего лишь игра. Ждем вас в следующем розыгрыше!')
+      }
+      } 
     </script>
 </body>
 
