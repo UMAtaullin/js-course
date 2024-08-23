@@ -2,22 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objects</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Objects</title>
 </head>
 
 <body>
-    <h1>Угадай загадку</h1>
-    <p id="riddle"></p>
-    <p><small>Дается 3 попытки.</small></p>
-    <div>
+  <div class="container">
+    <div class="riddle-app">
+      <h1>Угадай загадку</h1>
+      <p id="riddle"></p>
+      <p><small>Дается 3 попытки.</small></p>
+      <div class="input-container">
         <input placeholder="ответ" autofocus>
         <button onclick="check()">Проверить</button>
+      </div>
     </div>
-
     <script src="main.js"></script>
+  </div>
 </body>
 
 </html>
