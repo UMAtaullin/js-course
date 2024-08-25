@@ -41,7 +41,13 @@ p {
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
-  /* Отступ сверху для инпута и кнопки */
+}
+
+input {
+  flex: 1;
+  background: transparent;
+  border-radius: 5px;
+  padding-left: 10px;
 }
 
 input:focus {
