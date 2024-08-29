@@ -1,7 +1,9 @@
+// Создайте функции-колбэки isOdd и isEven.  Обе принимают число, и возвращают true, соответственно, isOdd если переданное число нечетное, а isEven - когда число четное. В противном случае функции возвращают false.
+
 function filterArray(array, callback) {
     const newArray = [];
-    for (let i = 0; i < array.length; i += 1) {
-      if (callback(array[i])) newArray.push(array[i]);
+    for (let i of array) {
+      if (callback(i)) newArray.push(i);
     }
     return newArray;
   }
