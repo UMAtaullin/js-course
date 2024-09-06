@@ -1,9 +1,9 @@
-## Репозиторий курса [Фундаментальный JavaScript](https://stepik.org/course/114165/syllabus?auth=login)
+## Course Repository: [Fundamental JavaScript](https://stepik.org/course/114165/syllabus?auth=login)
 
-В этот репозиторий я добавил код из видеоуроков и свои решения задач курса.
+This repository contains the code from the video tutorials and my solutions to the problems of the JavaScript basics course.
 
-Задачи сгруппированы по папкам с названием и номером соответствующего модуля.
+### Description
 
-В случаях, когда для задачи требовалось несколько файлов, созданы вложенные директории. 
-
-Названия задач и названия модулей совпадают с наименованием в курсе.
+- All tasks are grouped into folders corresponding to the name and number of the corresponding module.
+- In cases where multiple files were required to complete the task, nested directories were created.
+- The names of tasks and modules match the names in the course.
