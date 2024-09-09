@@ -1,0 +1,65 @@
+* {
+  color: #222;
+  font-family: Arial;
+}
+
+.shop {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product h2 {
+  margin: 0;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #d8cfcf;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #b89c9c;
+}
+
+#basket-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+}
+
+li {
+  text-decoration: underline;
+  line-height: 1.8;
+}
+
+.basket h2, h3 {
+  text-align: center;
+}
