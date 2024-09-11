@@ -1,15 +1,7 @@
-const buttons = document.getElementsByClassName('accordion');
+let buttons = document.querySelectorAll('.accordion')
 
-for (let i=0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', () => {
-        const panel = buttons[i].nextElementSibling;
-        panel.classList.toggle('show');
-    })
+buttons.forEach(el => el.addEventListener('click', changeVisible))
+
+function changeVisible () {
+    this.nextElementSibling.classList.toggle('show')
 }
-
-// То же самое, чуть современнее
-// const buttons = document.querySelectorAll('.accordion');
-// buttons.forEach(btn => btn.addEventListener('click', () => {
-//     const panel = btn.nextElementSibling;
-//     panel.classList.toggle('show');
-// }));
