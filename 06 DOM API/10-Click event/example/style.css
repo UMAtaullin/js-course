@@ -1,0 +1,17 @@
+button {
+  padding: 0.5rem 0.8rem;
+  font-size: 1.2rem;
+}
+
+.element {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+.visible {
+  display: none;
+}
