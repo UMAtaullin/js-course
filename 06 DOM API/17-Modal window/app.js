@@ -5,6 +5,11 @@ const close = document.querySelector('.close')
 btn.addEventListener('click', openModal)
 close.addEventListener('click', closeModal)
 
+const modalContent = document.querySelector('.modal-content');
+modalContent.addEventListener('click', (event) => {
+  event.stopPropagation(); 
+})
+
 function openModal() {
   modal.classList.add('open')
   attachModalEvents()
