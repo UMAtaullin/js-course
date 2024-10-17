@@ -1,0 +1,26 @@
+:root {
+  color: #222;
+  font-family: Arial;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+div {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid magenta;
+}
+
+.closed {
+  display: none;
+}
+
